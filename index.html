@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odonto Prime | Referência em Odontologia</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                        colors: {
+                            brand: {
+                                light: "#E0F2FE", // Azul bem claro
+                                DEFAULT: "#0284C7", // Azul de saúde/confiança
+                                dark: "#0369A1",
+                            },
+                            surface: "#F8FAFC", // Fundo cinza ultraclaro da Apple
+                            textMain: "#0F172A",
+                            textMuted: "#64748B",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body
+        class="bg-white text-textMain font-sans antialiased selection:bg-brand selection:text-white"
+    >
+        <header
+            class="py-4 border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50"
+        >
+            <div
+                class="max-w-7xl mx-auto px-6 flex justify-between items-center"
+            >
+                <div class="flex items-center gap-2">
+                    <div class="bg-brand text-white p-2 rounded-lg">
+                        <svg
+                            class="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span
+                            class="text-xl font-extrabold tracking-tight text-textMain"
+                            >ODONTO<span class="text-brand">PRIME</span></span
+                        >
+                        <span
+                            class="text-[9px] uppercase tracking-widest text-textMuted font-semibold mt-0.5"
+                            >Clínica Especializada</span
+                        >
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-6">
+                    <span
+                        class="text-sm font-medium text-textMuted flex items-center gap-1"
+                    >
+                        <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                            ></path>
+                        </svg>
+                        Centro, São Paulo
+                    </span>
+                    <a
+                        href="#contato"
+                        class="bg-textMain hover:bg-slate-800 text-white font-semibold py-2.5 px-6 rounded-full text-sm transition-all shadow-md"
+                    >
+                        Agendar Avaliação
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-16 md:py-24 px-6 bg-surface overflow-hidden">
+            <div
+                class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center"
+            >
+                <div class="relative z-10">
+                    <span
+                        class="inline-block py-1.5 px-4 rounded-full bg-brand-light text-brand-dark font-semibold text-xs tracking-widest uppercase mb-6"
+                    >
+                        Tecnologia e Conforto
+                    </span>
+                    <h1
+                        class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] mb-6"
+                    >
+                        O sorriso que você <br />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-brand-dark"
+                            >sempre sonhou.</span
+                        >
+                    </h1>
+                    <p
+                        class="text-lg md:text-xl text-textMuted leading-relaxed mb-10 max-w-lg"
+                    >
+                        Tratamentos estéticos e funcionais com tecnologia de
+                        ponta, em um ambiente projetado para o seu total
+                        bem-estar.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a
+                            href="#contato"
+                            class="flex items-center justify-center gap-2 bg-brand hover:bg-brand-dark text-white font-bold py-4 px-8 rounded-full text-lg transition-all shadow-lg shadow-brand/30"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                />
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-brand rounded-full blur-[100px] opacity-20 translate-x-10 translate-y-10"
+                    ></div>
+                    <img
+                        src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
+                        alt="Consultório"
+                        class="relative rounded-[2.5rem] shadow-2xl border-8 border-white object-cover aspect-[4/3] transform hover:-translate-y-2 transition-transform duration-500"
+                    />
+
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl border border-slate-100 flex items-center gap-4"
+                    >
+                        <div class="bg-brand-light p-3 rounded-full text-brand">
+                            <svg
+                                class="w-8 h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                class="text-2xl font-extrabold text-textMain tracking-tight"
+                            >
+                                4.9
+                            </p>
+                            <p
+                                class="text-xs text-textMuted font-semibold uppercase tracking-widest"
+                            >
+                                +500 Avaliações
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4"
+                    >
+                        Nossas Especialidades
+                    </h2>
+                    <p class="text-lg text-textMuted max-w-2xl mx-auto">
+                        Procedimentos realizados pelos melhores especialistas da
+                        região.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="p-10 rounded-3xl bg-surface border border-slate-100 hover:shadow-lg transition-shadow group"
+                    >
+                        <div
+                            class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-200 flex items-center justify-center mb-6 text-brand group-hover:scale-110 transition-transform"
+                        >
+                            <svg
+                                class="w-7 h-7"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 tracking-tight">
+                            Implantes Estéticos
+                        </h3>
+                        <p class="text-textMuted leading-relaxed">
+                            Recupere a função mastigatória e a estética com
+                            materiais biocompatíveis de alta durabilidade.
+                        </p>
+                    </div>
+                    <div
+                        class="p-10 rounded-3xl bg-surface border border-slate-100 hover:shadow-lg transition-shadow group"
+                    >
+                        <div
+                            class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-200 flex items-center justify-center mb-6 text-brand group-hover:scale-110 transition-transform"
+                        >
+                            <svg
+                                class="w-7 h-7"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 tracking-tight">
+                            Lentes de Contato
+                        </h3>
+                        <p class="text-textMuted leading-relaxed">
+                            Transforme o formato, cor e alinhamento dos seus
+                            dentes em poucas sessões.
+                        </p>
+                    </div>
+                    <div
+                        class="p-10 rounded-3xl bg-surface border border-slate-100 hover:shadow-lg transition-shadow group"
+                    >
+                        <div
+                            class="w-14 h-14 bg-white rounded-2xl shadow-sm border border-slate-200 flex items-center justify-center mb-6 text-brand group-hover:scale-110 transition-transform"
+                        >
+                            <svg
+                                class="w-7 h-7"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 tracking-tight">
+                            Ortodontia Invisível
+                        </h3>
+                        <p class="text-textMuted leading-relaxed">
+                            Alinhadores transparentes que corrigem seu sorriso
+                            sem o desconforto dos aparelhos metálicos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-textMain text-white">
+            <div
+                class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center"
+            >
+                <div>
+                    <h2
+                        class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-8 leading-tight"
+                    >
+                        Infraestrutura de <br />alto padrão.
+                    </h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="bg-slate-800 p-2 rounded-full text-brand"
+                            >
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="text-lg font-medium text-slate-300">
+                                Equipamentos de última geração (Raio-X Digital).
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="bg-slate-800 p-2 rounded-full text-brand"
+                            >
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="text-lg font-medium text-slate-300">
+                                Ambiente climatizado e estacionamento próprio.
+                            </p>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div
+                                class="bg-slate-800 p-2 rounded-full text-brand"
+                            >
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <p class="text-lg font-medium text-slate-300">
+                                Atendimento humanizado sem tempo de espera.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img
+                        src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=600"
+                        class="rounded-3xl w-full h-48 object-cover shadow-lg"
+                        alt="Estrutura 1"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&q=80&w=600"
+                        class="rounded-3xl w-full h-48 object-cover shadow-lg translate-y-8"
+                        alt="Estrutura 2"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 px-6 bg-surface">
+            <div
+                class="max-w-6xl mx-auto bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden flex flex-col md:flex-row"
+            >
+                <div class="p-12 md:p-16 md:w-1/2 flex flex-col justify-center">
+                    <h2 class="text-3xl font-extrabold tracking-tight mb-8">
+                        Faça-nos uma visita.
+                    </h2>
+
+                    <div class="space-y-8 mb-12">
+                        <div class="flex items-start gap-4">
+                            <div class="text-brand mt-1">
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                                    ></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-textMain">
+                                    Endereço
+                                </h4>
+                                <p class="text-textMuted">
+                                    Av. Paulista, 1000 - Bela Vista<br />São
+                                    Paulo - SP, 01310-100
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="text-brand mt-1">
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-textMain">
+                                    Horário de Funcionamento
+                                </h4>
+                                <p class="text-textMuted">
+                                    Segunda a Sexta: 08h às 19h<br />Sábados:
+                                    08h às 14h
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a
+                        href="#"
+                        class="block text-center w-full bg-brand hover:bg-brand-dark text-white font-bold py-5 rounded-full text-lg transition-all shadow-lg shadow-brand/30"
+                    >
+                        Agendar pelo WhatsApp
+                    </a>
+                </div>
+
+                <div class="md:w-1/2 bg-slate-200 min-h-[400px] relative">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center text-slate-400 flex-col gap-2"
+                    >
+                        <svg
+                            class="w-12 h-12"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                            ></path>
+                        </svg>
+                        <span class="font-medium text-sm"
+                            >Espaço para o Google Maps do Cliente</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-white py-8 border-t border-slate-100 text-center">
+            <p class="text-sm font-semibold text-textMuted tracking-tight">
+                &copy; 2026 Odonto Prime. Todos os direitos reservados.
+            </p>
+        </footer>
+    </body>
+</html>
